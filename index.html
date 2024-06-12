@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>evaliacion2</title>
+    <link rel="stylesheet" href="assets/scss/proyecto.css"> 
+</head>
+<body>
+  <body>
+    <div class="contenedor">
+      <div class="row">
+        <div class="col-md-3">
+          <button class="btn btn-primary" id="animar">muevete</button>
+        </div>
+        <div class="cuerpo col-md-4 position-relative" id="cuerpo">
+          <img src="assets/img/pikachu_cuerpo.png" alt="" class="">
+          <img src="assets/img/pikachu_boca.png" alt="" class="position-absolute top-50 start-50 translate-middle">
+          <img src="" alt="" class="">
+          <img src="" alt="" class="">
+          <img src="" alt="" class="">
+
+        </div>
+      </div>
+    </div>
+</body>
+  
+<script src="assets/bootstrap-5.3.3/dist/js/bootstrap.bundle.js"></script>
+<script src="assets/js/script.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+  $('#animar').click(function() {
+      $('.cuerpo').animate({
+          left: '+=100px'
+      }, 1000, function() {
+      });
+  });
+});
+</script>
+</body>
+</html>
+
